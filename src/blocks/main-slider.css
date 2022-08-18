@@ -1,0 +1,88 @@
+.main-slider {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+}
+.main-slider__container {
+  color: #000;
+}
+.main-slider__img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.main-slider__content {
+  position: absolute;
+  top: 32%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+.main-slider__content_left {
+  left: 9%;
+}
+.main-slider__content_right {
+  right: 20%;
+}
+.main-slider__subtitle {
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+}
+.main-slider__title {
+  font-family: 'Cormorant';
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 70px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 25px;
+}
+.main-slider__btn {
+  padding: 0 0 5px;
+  border-bottom: 1px solid #272727;
+  transition: all 0.4s ease-in-out;
+}
+.main-slider__btn:hover {
+  border-bottom: 1px solid #FFF;
+}
+.main-slider__button {
+  background: none;
+  font-family: 'Cormorant';
+  font-weight: 600;
+  background-color: #272727;
+  transition: all 1s ease;
+  padding: 13px 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.main-slider__arrow {
+  position: absolute;
+  display: block;
+  z-index: 10;
+  top: 55%;
+  font-size: 40px;
+  line-height: 1;
+  margin-top: -2em;
+  cursor:pointer;
+  color: black;
+}
+.main-slider__prev {
+  left: 0;
+
+}
+.main-slider__next {
+  right: 0;
+  
+}
+.swiper-button-disabled {
+  color: gray;
+  cursor: url('../images/stop-icon.png'), auto;
+}

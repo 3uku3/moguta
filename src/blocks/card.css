@@ -1,0 +1,124 @@
+.card {
+  width: fit-content;
+  position: relative;
+}
+.card__image {
+  overflow: hidden;
+  position: relative;
+}
+.card__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.card__img_hidden {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  z-index: 3;
+  transition: all 0.4s ease-in-out;
+}
+.card:hover .card__img_hidden{
+  left: 0;
+  opacity: 1;
+}
+.card__stars {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #ff8149;
+  background-color: #FFF;
+  padding: 0 7px;
+  border-radius: 10px;
+}
+.card__image-buttons {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  right: -100%;
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
+}
+.card:hover .card__image-buttons {
+  right: 0;
+}
+.card__image-btn {
+	cursor: pointer;
+  background: none;
+  border: none;
+	display: block;
+	position: relative;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  z-index: 0;
+  padding: 10px 10px 7px;
+  background-color: #FFF;
+}
+.card__image-btn svg {
+  transition: all 0.4s ease-in-out;
+  color: #111;
+}
+.card__image-btn:hover svg{
+  fill: #FFF !important;
+}
+.card__image-btn:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	background: #111;
+	transition: all 0.4s ease-in-out;
+}
+.card__image-btn:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.card__image-btn svg {
+  max-width: 14px;
+  max-height: 14px;
+}
+.card__sale {
+  position: absolute;
+  color: #444;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  left: -100%;
+  top: 15px;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+  display: none;
+}
+.card__sale_active {
+   display: block;
+}
+.card:hover .card__sale {
+  left: 15px;
+}
+.card__new {
+  display: none;
+  position: absolute;
+  color: #444;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  left: -100%;
+  top: 35px;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+.card__new_active {
+  display: block;
+}
+.card:hover .card__new {
+  left: 15px;
+}

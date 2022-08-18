@@ -1,0 +1,97 @@
+.dropdown {
+  position: relative;
+}
+.dropdown_active .dropdown__current{
+  color: #ff8149;
+}
+.dropdown .mdi {
+  transition: transform .4s ease-in-out;
+}
+.dropdown_active .mdi {
+  transform: rotate(180deg);
+}
+.dropdown__current {
+  color: #FFF;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  word-spacing: -3px;
+  display: flex;
+  align-items: center;
+}
+.dropdown__text_s {
+  font-weight: 400;
+}
+.dropdown__current:hover {
+  color: #ff8149;
+}
+.dropdown__img {
+  display: inline-block;
+  min-width: 16px;
+  height: 11px;
+  margin-right: 5px;
+}
+.dropdown__img_usd {
+  background-image: url('../images/usd.webp');
+}
+.dropdown__img_eur {
+  background-image: url('../images/eur.png');
+}
+.dropdown__img_gbp {
+  background-image: url('../images/gbp.png');
+}
+.dropdown__img_aud {
+  background-image: url('../images/aud.png');
+}
+.dropdown__img_inr {
+  background-image: url('../images/inr.png');
+}
+.dropdown__container {
+  position: absolute;
+  top: 31px;
+  background-color: #FFF;
+  z-index: 5;
+  color: #000;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-top: none;
+  height: 0;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+.dropdown__container_s {
+  height: 95px;
+}
+.dropdown__container_m {
+  height: 150px;
+}
+.dropdown__container_hidden {
+  height: 0px;
+}
+.dropdown__items {
+  list-style: none;
+  margin: 15px 46px 15px 17px;
+  padding: 0;
+}
+.dropdown__item {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease-in-out;
+}
+.dropdown__item:hover {
+  color: #000;
+}
+.dropdown__item_active {
+  color: #000;
+}

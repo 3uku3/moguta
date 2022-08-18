@@ -1,0 +1,11 @@
+@import '../vendor/fonts.css';
+@import '../blocks/header.css';
+@import '../blocks/dropdown.css';
+@import '../blocks/main-menu.css';
+@import '../blocks/main-slider.css';
+@import '../blocks/categories.css';
+@import '../blocks/categories-slider.css';
+@import '../blocks/menu.css';
+@import '../blocks/animation-line.css';
+@import '../blocks/animation-button.css';
+@import '../blocks/card.css';

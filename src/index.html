@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__left">
+        <div class="header__lang dropdown">
+          <a class="dropdown__current" href="#">
+            <span class="dropdown-text">English</span>
+            <i class="mdi mdi-chevron-down"></i>
+          </a>
+          <div class="dropdown__container dropdown__container_s dropdown__container_hidden">
+            <ul class="dropdown__items">
+              <li class="dropdown__item">
+                العربية
+              </li>
+              <li class="dropdown__item">
+                Deutsch
+              </li>
+              <li class="dropdown__item dropdown__item_active">
+                English
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__currency dropdown">
+          <a class="dropdown__current" href="#">
+            <span class="dropdown__img dropdown__img_usd"></span>
+            <span class="dropdown__text dropdown__text_s">USD</span>
+            <i class="mdi mdi-chevron-down"></i>
+          </a>
+          <div class="dropdown__container dropdown__container_m dropdown__container_hidden">
+            <ul class="dropdown__items">
+              <li class="dropdown__item dropdown__item_active">
+                <span class="dropdown__img dropdown__img_usd"></span>
+                <span class="dropdown__text dropdown__text_s">USD</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__img dropdown__img_eur"></span>
+                <span class="dropdown__text dropdown__text_s">EUR</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__img dropdown__img_gbp"></span>
+                <span class="dropdown__text dropdown__text_s">GBP</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__img dropdown__img_aud"></span>
+                <span class="dropdown__text dropdown__text_s">AUD</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__img dropdown__img_inr"></span>
+                <span class="dropdown__text dropdown__text_s">INR</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="header__sales" href="#">
+          <i class="mdi mdi-percent"></i>
+          <span class="header__sales-text">Clearance Sales</span>
+        </a>
+      </div>
+      <div class="header__center">
+        <i class="mdi mdi-odnoklassniki"></i>
+        <p class="header__destination">Hurrah! Get Free Shipping on All Orders Over $99!</p>
+      </div>
+      <div class="header__right">
+        <a class="header__phone" href="tel:+01-987-654-3210">
+          <i class="mdi mdi-phone-in-talk"></i>
+          <p class="header__phone-num">+01-987-654-3210</p>
+        </a>
+        <a class="header__email" href="mailto:contact@store.com">
+          <i class="mdi mdi-email-open"></i>
+          <p class="header__email-text">contact@store.com</p>
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__left">
+        <div class="header__menu-container">
+          <button class="header__menu"></button>
+        </div>
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src='./images/logo.png' alt="logo">
+        </a>
+      </div>
+      <div class="header__main-menu main-menu">
+        <ul class="main-menu__items">
+          <li class="main-menu__item main-menu__home animation-line">
+            <p class="main-menu__text">Home</p>
+            <i class="mdi mdi-chevron-down"></i>
+            <p class="main-menu__alert">NEW</p>
+          </li>
+          <li class="main-menu__item main-menu__shop animation-line">
+            <p class="main-menu__text">Shop</p>
+            <i class="mdi mdi-chevron-down"></i>
+            <p class="main-menu__alert">HOT</p>
+          </li>
+          <li class="main-menu__item main-menu__pages animation-line">
+            <p class="main-menu__text">Pages</p>
+            <i class="mdi mdi-chevron-down"></i>
+          </li>
+          <li class="main-menu__item main-menu__blog animation-line">
+            <p class="main-menu__text">Blog</p>
+            <i class="mdi mdi-chevron-down"></i>
+          </li>
+          <li class="main-menu__item main-menu__look-book animation-line">
+            <p class="main-menu__text">Look Book</p>
+            <i class="mdi mdi-chevron-down"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <div class="header__search">
+          <svg class="header__search-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path
+                d="M1940 5109 c-357 -37 -713 -177 -1020 -403 -114 -83 -323 -290 -407 -402 -264 -349 -405 -745 -420 -1179 -9 -259 23 -481 103 -723 100 -301 272 -578 500 -806 334 -334 756 -539 1227 -597 127 -15 451 -7 572 15 281 51 531 147 758 289 l87 56 614 -638 c337 -350 627 -649 644 -663 108 -90 294 -65 376 50 42 58 54 96 55 164 2 108 -5 117 -654 790 -324 336 -600 624 -612 639 l-23 27 54 68 c362 465 503 1076 385 1674 -59 299 -214 627 -412 873 -442 550 -1129 837 -1827 766z m410 -543 c649 -87 1163 -562 1300 -1202 28 -127 38 -382 20 -503 -49 -348 -196 -645 -436 -885 -231 -232 -518 -378 -844 -432 -109 -18 -349 -18 -466 0 -422 64 -804 309 -1039 666 -84 127 -129 220 -175 359 -51 151 -71 264 -77 434 -33 853 655 1569 1512 1576 55 0 147 -6 205 -13z">
+              </path>
+            </g>
+          </svg>
+          <p class="header__search-text">
+            Search
+          </p>
+        </div>
+        <div class="header__account" href="#">
+          <p class="header__account-text">My Account</p>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <a class="header__cart" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512">
+            <g>
+              <path
+                d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z">
+              </path>
+            </g>
+          </svg>
+          <p class="header__card-text"><span>0</span></p>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="main-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a class="main-slider__container" href="#">
+            <img class="main-slider__img" src='./images/slider-01.webp' alt="slide 1">
+            <div class="main-slider__content main-slider__content_left">
+              <p class="main-slider__subtitle">Shop Now & Save Up To 25% OFF</p>
+              <h2 class="main-slider__title">Big Collection Styles
+                Modern Wear</h2>
+              <div class="main-slider__btn">
+                <button class="main-slider__button animated-button ">
+                    Shop Now
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="main-slider__container" href="#">
+            <img class="main-slider__img" src='./images/slider-02.webp' alt="slide 1">
+            <div class="main-slider__content main-slider__content_right">
+              <p class="main-slider__subtitle">Shop Now & Save Up To 25% OFF</p>
+              <h2 class="main-slider__title">Big Collection Styles
+                Modern Wear</h2>
+              <div class="main-slider__btn">
+                <button class="main-slider__button animated-button ">
+                  <span class="main-slider__button-text">Shop Now</span>
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="main-slider__arrow main-slider__prev">
+        <i class="mdi mdi-chevron-left"></i>
+      </div>
+      <div class="main-slider__arrow main-slider__next">
+        <i class="mdi mdi-chevron-right"></i>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="categories__container">
+        <p class="categories__subtitle">TOP CATEGORIES</p>
+        <h2 class="categories__title">Shop By Categories</h2>
+        <p class="categories__text">Add our new arrivals to your weekly lineup.</p>
+      </div>
+      <div class="categories__slider categories-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="categories-slider__container">
+              <div class="categories-slider__image">
+                <img class="categories-slider__img" src="./images/category-01.webp" alt="slide 1">
+              </div>
+              <div class="categories-slider__content">
+                <a class="categories-slider__name" href="#">Spa</a>
+                <a class="categories-slider__items" href="#">-4 Items-</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="categories-slider__container">
+              <div class="categories-slider__image">
+                <img class="categories-slider__img" src="./images/category-02.webp" alt="slide 2">
+              </div>
+              <div class="categories-slider__content">
+                <a class="categories-slider__name" href="#">Body Care</a>
+                <a class="categories-slider__items" href="#">-20 Items-</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="categories-slider__container">
+              <div class="categories-slider__image">
+                <img class="categories-slider__img" src="./images/category-03.webp" alt="slide 3">
+              </div>
+              <div class="categories-slider__content">
+                <a class="categories-slider__name" href="#">Makeup</a>
+                <a class="categories-slider__items" href="#">-5 Items-</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="categories-slider__container">
+              <div class="categories-slider__image">
+                <img class="categories-slider__img" src="./images/category-04.webp" alt="slide 4">
+              </div>
+              <div class="categories-slider__content">
+                <a class="categories-slider__name" href="#">Face Care</a>
+                <a class="categories-slider__items" href="#">-8 Items-</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="categories__bonuses">
+        <li class="categories__bonuses-item">
+          <a class="categories__bonuses-link" href="#">
+            <div class="categories__bonuses-shop"></div>
+            <h5 class="categories__bonuses-title">Shop Worldwide</h5>
+            <p class="categories__bonuses-subtitle">Dropship Worldwide</p>
+          </a>
+        </li>
+        <li class="categories__bonuses-item">
+          <a class="categories__bonuses-link" href="#">
+            <div class="categories__bonuses-saving"></div>
+            <h5 class="categories__bonuses-title">Big Saving Shop</h5>
+            <p class="categories__bonuses-subtitle">Save Big Every Order</p>
+          </a>
+        </li>
+        <li class="categories__bonuses-item">
+          <a class="categories__bonuses-link" href="#">
+            <div class="categories__bonuses-support"></div>
+            <h5 class="categories__bonuses-title">24H 7D Support</h5>
+            <p class="categories__bonuses-subtitle">One-on-one Support</p>
+          </a>
+        </li>
+        <li class="categories__bonuses-item">
+          <a class="categories__bonuses-link" href="#">
+            <div class="categories__bonuses-return"></div>
+            <h5 class="categories__bonuses-title">Money Back Return</h5>
+            <p class="categories__bonuses-subtitle">Cancel Order Anytime</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="trending">
+      <article class="trending__card card">
+        <div class="card__image">
+          <img class="card__img" src="./images/new-products-01.webp" alt="product 1">
+          <img class="card__img card__img_hidden" src="./images/new-products-02.webp" alt="product 1">
+          <div class="card__stars">
+            <i class="mdi mdi-star-outline"></i>
+            <i class="mdi mdi-star-outline"></i>
+            <i class="mdi mdi-star-outline"></i>
+            <i class="mdi mdi-star-outline"></i>
+            <i class="mdi mdi-star-outline"></i>
+          </div>
+          <div class="card__sale card__sale_active">Sale</div>
+          <div class="card__new card__new_active">New</div>
+          <div class="card__image-buttons">
+            <button class="card__image-btn card__like-btn animated-button">
+              <svg class="wishlist-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="134.000000pt" height="123.000000pt" viewBox="0 0 134.000000 123.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,123.000000) scale(0.100000,-0.100000)" stroke="none">
+                  <path d="M252 1210 c-83 -28 -156 -89 -199 -166 -75 -137 -57 -306 50 -466 51 -76 266 -299 440 -455 l127 -115 128 115 c173 156 388 379 439 455 107 160 125 329 50 466 -111 202 -372 244 -569 93 l-48 -37 -47 37 c-115 87 -247 113 -371 73z m223 -139 c54 -24 100 -64 115 -101 12 -29 14 -30 80 -30 66 0 68 1 80 30 28 68 130 124 225 123 133 -1 225 -94 225 -227 0 -73 -22 -136 -78 -220 -46 -69 -231 -262 -375 -390 l-77 -68 -77 68 c-144 128 -329 321 -375 390 -56 84 -78 147 -78 220 0 176 167 278 335 205z"></path>
+                </g>
+              </svg>
+            </button>
+            <button class="card__image-btn card__compare-btn animated-button">
+              <svg class="compare-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="88.000000pt" height="89.000000pt" viewBox="0 0 88.000000 89.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)" stroke="none">
+                  <path d="M42 873 c-36 -14 -42 -56 -42 -303 0 -251 6 -288 45 -304 9 -3 132 -6 273 -6 277 1 282 2 302 54 6 16 10 124 10 262 0 245 -6 283 -45 298 -20 7 -524 7 -543 -1z m498 -303 l0 -230 -225 0 -225 0 0 230 0 230 225 0 225 0 0 -230z"></path>
+                  <path d="M710 590 l0 -40 40 0 40 0 0 -230 0 -230 -224 0 -225 0 -3 42 c-3 43 -3 43 -43 43 -39 0 -40 -1 -43 -39 -4 -51 4 -82 28 -106 19 -19 34 -20 283 -20 282 1 287 1 307 54 6 16 10 124 10 262 0 299 -2 304 -116 304 l-54 0 0 -40z"></path>
+                </g>
+              </svg>
+            </button>
+            <button class="card__image-btn card__view-btn animated-button">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="92.000000pt" height="64.000000pt" viewBox="0 0 92.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" stroke="none">
+                  <path d="M331 614 c-30 -8 -77 -27 -105 -42 -66 -35 -164 -133 -199 -199 l-28 -53 28 -52 c35 -67 133 -165 199 -200 143 -77 325 -77 468 0 66 35 164 133 199 200 l28 52 -28 53 c-35 66 -133 164 -199 199 -105 56 -249 73 -363 42z m293 -102 c108 -50 205 -155 192 -206 -12 -47 -104 -134 -184 -173 -71 -36 -81 -38 -171 -38 -87 0 -103 4 -163 32 -110 52 -207 156 -194 207 16 66 163 181 262 206 72 18 187 5 258 -28z"></path>
+                  <path d="M374 406 c-30 -30 -34 -40 -34 -86 0 -46 4 -56 34 -86 30 -30 40 -34 86 -34 75 0 120 45 120 120 0 46 -4 56 -34 86 -30 30 -40 34 -86 34 -46 0 -56 -4 -86 -34z"></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card__description">
+          <p class="card__description-title">Pure Healthy Face Powder Foundations</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <div class="menu">
+    <button class="menu__close"><i class="mdi mdi-close"></i></button>
+    <ul class="menu__items">
+      <li class="menu__item"><a class="menu__link animation-line" href="#">Cosmetics Collection</a></li>
+      <li class="menu__item">
+        <div class="menu__face-care">
+          <div class="menu__item-container">
+            <a class="menu__link animation-line" href="#">Face Care</a>
+            <i class="mdi mdi-chevron-down"></i>
+          </div>
+          <ul class="menu__dropdown menu__dropdown_m menu__dropdown_hidden">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">BB Cream</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Serum</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Face Wash</a>
+            </li>
+          </ul>
+          </a>
+        </div>
+      <li class="menu__item">
+        <div class="menu__spa">
+          <div class="menu__item-container">
+            <a class="menu__link animation-line" href="#">Spa</a>
+            <i class="mdi mdi-chevron-down"></i>
+          </div>
+          <ul class="menu__dropdown menu__dropdown_m menu__dropdown_hidden">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Ayurvedic spa</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Destination Spa</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Pamper Spa</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu__item">
+        <div class="menu__highlighter">
+          <div class="menu__item-container">
+            <a class="menu__link animation-line" href="#">Highlighter</a>
+            <i class="mdi mdi-chevron-down"></i>
+          </div>
+          <ul class="menu__dropdown menu__dropdown_l menu__dropdown_hidden">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Glow Gliter</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Multicolored</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Erasable</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Liquid Highlighter</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu__item">
+        <div class="menu__foundation">
+          <div class="menu__item-container">
+            <a class="menu__link animation-line" href="#">Foundation</a>
+            <i class="mdi mdi-chevron-down"></i>
+          </div>
+          <ul class="menu__dropdown menu__dropdown_m menu__dropdown_hidden">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Waterprof</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Mouss</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Liquid Foundation</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu__item">
+        <div class="menu__fregrance">
+          <div class="menu__item-container">
+            <a class="menu__link animation-line" href="#">Fregrance</a>
+            <i class="mdi mdi-chevron-down"></i>
+          </div>
+          <ul class="menu__dropdown menu__dropdown_s menu__dropdown_hidden">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Deodorant</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="#">Perfume</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

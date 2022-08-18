@@ -1,0 +1,16 @@
+.animation-line {
+  position: relative;
+}
+.animation-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: all 0.4s ease-in-out;
+}
+.animation-line:hover::after {
+  width: 100%;
+}

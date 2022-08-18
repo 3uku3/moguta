@@ -1,0 +1,236 @@
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 12px;
+  background-color: #272727;
+}
+.header__left {
+  justify-content: left;
+  display: flex;
+  align-items: center;
+}
+.header__center {
+  display: flex;
+  align-items: center;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__lang {
+  color: #FFF;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-right: 14px;
+  padding-right: 14px;
+  border-right: 1px solid rgba(255,255,255,0.2);
+  transition: all .4s ease-in-out;
+}
+.header__lang:hover {
+  color: #ff8149;
+}
+.header__currency {
+  margin-right: 14px;
+  padding-right: 14px;
+  border-right: 1px solid rgba(255,255,255,0.2);
+  transition: all .4s ease-in-out;
+}
+.header__currency:hover {
+  color: #ff8149;
+}
+.header__currency-text {
+  font-weight: 400;
+}
+.header__sales {
+  color: #ff8149;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  transition: all .4s ease-in-out;
+}
+.header__sales .mdi {
+  font-size: 16px;
+}
+.header__sales:hover {
+  color: #FFF;
+}
+.header__center {
+  color: white;
+  
+}
+.header__destination {
+  margin: 0 0 0 5px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+.header__center .mdi{
+  transition: all 0.4s ease-in-out;
+}
+.header__center:hover .mdi {
+  transform: rotateY(180deg);
+}
+.header__phone {
+  color: #FFF;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.header__phone:hover {
+  color: #ff8149;
+}
+.header__phone .mdi {
+  font-size: 16px;
+}
+.header__phone-num {
+  margin: 0 0 0 6px;
+  border-right: 1px solid gray;
+  padding-right: 10px;
+}
+.header__email {
+  color: #FFF;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.header__email:hover {
+  color: #ff8149;
+}
+.header__email .mdi {
+  font-size: 16px;
+}
+.header__email-text {
+  margin: 0 0 0 6px;
+}
+.header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+.header__menu-container {
+  margin: 0 0 2px;
+  cursor: pointer;
+}
+.header__menu {
+  background: none;
+  background-color: black;
+  width: 15px;
+  height: 2px;
+  position: relative;
+  border: none;
+  margin: 10px 15px 10px 0;
+  padding: 0;
+}
+.header__menu::after {
+  content: '';
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-color: black;
+}
+.header__menu::before {
+  content: '';
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  background-color: black;
+}
+.header__logo {
+  margin-top: 3px;
+}
+.header__search {
+  color: black;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.header__search svg{
+  width: 14px;
+  height: 20px;
+  margin-right: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.header__search:hover svg {
+  transform: rotateY(180deg);
+}
+.header__account {
+  color: black;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.header__account-text {
+  margin-right: 4px;
+}
+.header__cart {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.header__card-text {
+  margin-left: 5px;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  border-radius: 50%;
+}
+.header__cart svg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.header__cart:hover svg {
+  transform: rotateY(180deg);
+}
