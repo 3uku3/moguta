@@ -7,8 +7,10 @@
   z-index: 0;
 }
 .animated-button:hover {
-	color: #000 !important;
-	background-color: transparent;
+	color: #000;
+}
+.animated-button_orange:hover {
+  color: #FFF;
 }
 .animated-button:hover:before {
 	left: 0%;
@@ -24,7 +26,11 @@
 	width: 0px;
 	z-index: -1;
 	content: '';
-	color: #000 !important;
+	color: #000;
 	background: #FFF;
 	transition: all 0.4s ease-in-out;
+}
+.animated-button_orange::before {
+  color: #FFF;
+  background: #FF8149;
 }

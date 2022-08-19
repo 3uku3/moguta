@@ -1,0 +1,25 @@
+
+.slider__arrow {
+  position: absolute;
+  display: block;
+  z-index: 10;
+  top: 55%;
+  font-size: 40px;
+  line-height: 1;
+  margin-top: -2em;
+  cursor:pointer;
+  color: black;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+.slider:hover .slider__arrow{
+  opacity: 1;
+}
+.swiper-button-disabled {
+  color: gray;
+  cursor: url('../images/stop-icon.png'), auto;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}

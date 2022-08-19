@@ -9,6 +9,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3uku3/moguta.git"
+  },
   "author": "Mikhail Utin",
   "license": "ISC",
   "devDependencies": {

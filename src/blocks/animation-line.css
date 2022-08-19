@@ -1,7 +1,7 @@
 .animation-line {
   position: relative;
 }
-.animation-line::after {
+.animation-line_left::after {
   content: '';
   position: absolute;
   left: 0;
@@ -11,6 +11,23 @@
   background-color: #000;
   transition: all 0.4s ease-in-out;
 }
-.animation-line:hover::after {
+.animation-line_left:hover::after {
   width: 100%;
 }
+.animation-line_center::after {
+  content: "";
+  left: 0px;
+  right: 0;
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+  height: 2px;
+  z-index: 10;
+  transition: all .4s ease-in-out 0s;
+  width: 0;
+  background: #111;
+  margin: 0 auto;
+}
+.animation-line_center:hover::after {
+  width: 80%;
+} 

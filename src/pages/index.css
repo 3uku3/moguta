@@ -1,6 +1,7 @@
 @import '../vendor/fonts.css';
 @import '../blocks/header.css';
 @import '../blocks/dropdown.css';
+@import '../blocks/slider.css';
 @import '../blocks/main-menu.css';
 @import '../blocks/main-slider.css';
 @import '../blocks/categories.css';
@@ -8,4 +9,11 @@
 @import '../blocks/menu.css';
 @import '../blocks/animation-line.css';
 @import '../blocks/animation-button.css';
+@import '../blocks/trending.css';
 @import '../blocks/card.css';
+@import '../blocks/banners.css';
+@import '../blocks/special.css';
+@import '../blocks/news.css';
+@import '../blocks/card-news.css';
+@import '../blocks/inst.css';
+@import '../blocks/footer.css';

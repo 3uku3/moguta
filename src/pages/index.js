@@ -37,4 +37,3 @@ buttonCurrency.addEventListener('click', () => {
   buttonCurrency.classList.toggle('dropdown_active');
   dropdownCurrency.classList.toggle('dropdown__container_hidden');
 })
-

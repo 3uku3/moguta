@@ -1,7 +1,5 @@
 .main-slider {
-  overflow: hidden;
   max-width: 100%;
-  position: relative;
 }
 .main-slider__container {
   color: #000;
@@ -63,26 +61,11 @@
   z-index: 3;
 }
 
-.main-slider__arrow {
-  position: absolute;
-  display: block;
-  z-index: 10;
-  top: 55%;
-  font-size: 40px;
-  line-height: 1;
-  margin-top: -2em;
-  cursor:pointer;
-  color: black;
-}
+
 .main-slider__prev {
   left: 0;
 
 }
 .main-slider__next {
   right: 0;
-  
-}
-.swiper-button-disabled {
-  color: gray;
-  cursor: url('../images/stop-icon.png'), auto;
 }
