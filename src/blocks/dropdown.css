@@ -95,3 +95,13 @@
 .dropdown__item_active {
   color: #000;
 }
+@media (max-width: 1122px) {
+  .dropdown__current {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .dropdown {
+    display: none;
+  }
+}

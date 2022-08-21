@@ -5,7 +5,7 @@
 .special__wrapper {
   margin: 0 auto;
   position: relative;
-  width: 85%;
+  max-width: 1600px;
   padding: 80px 0 80px;
 }
 .special__container {
@@ -51,4 +51,44 @@
 .special__wrapper:hover .special__arrow-next,
 .special__wrapper:hover .special__arrow-prev {
   opacity: 1;
+}
+
+@media (max-width: 1199px) {
+  .special__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .special__arrow-container {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .special__arrow-next {
+    position: static;
+    margin: 0;
+    opacity: 1;
+  }
+  .special__arrow-prev {
+    position: static;
+    height: fit-content;
+    margin: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .special__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .special__wrapper {
+    width: 95%;
+  }
+}
+@media (max-width: 480px) {
+  .special__title {
+    font-size: 22px;
+  }
 }

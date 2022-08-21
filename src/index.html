@@ -8,8 +8,20 @@
   <title>Document</title>
 </head>
 
-<body>
+<body class="body">
   <header class="header">
+    <div class="search">
+      <button class="search__close">
+        <i class="mdi mdi-close"></i>
+      </button>
+      <div class="search__wrapper">
+        <p class="search__text">What Are You Looking For?</p>
+        <form class="search__input-container">
+          <input class="search__input" type="text" placeholder="Search our product">
+          <i class="mdi mdi-magnify"></i>
+        </form>
+      </div>
+    </div>
     <div class="header__top">
       <div class="header__left">
         <div class="header__lang dropdown">
@@ -83,7 +95,7 @@
       </div>
     </div>
     <div class="header__bottom">
-      <div class="header__left">
+      <div class="header__bottom-left">
         <div class="header__menu-container">
           <button class="header__menu"></button>
         </div>
@@ -93,31 +105,126 @@
       </div>
       <div class="header__main-menu main-menu">
         <ul class="main-menu__items">
-          <li class="main-menu__item main-menu__home animation-line animation-line_left">
-            <p class="main-menu__text">Home</p>
-            <i class="mdi mdi-chevron-down"></i>
-            <p class="main-menu__alert">NEW</p>
+          <li class="main-menu__item main-menu__home main-menu__item_relative">
+            <p class="main-menu__text">Home <i class="mdi mdi-chevron-down"></i><span
+                class="main-menu__alert">NEW</span></p>
+            <div class="main-menu__dropdown main-menu__dropdown_size_s">
+              <ul class="main-menu__dropdown-items">
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Cosmetic 1</a></li>
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Cosmetic 2</a></li>
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Cosmetic 3</a></li>
+              </ul>
+            </div>
           </li>
-          <li class="main-menu__item main-menu__shop animation-line animation-line_left">
-            <p class="main-menu__text">Shop</p>
-            <i class="mdi mdi-chevron-down"></i>
-            <p class="main-menu__alert">HOT</p>
+          <li class="main-menu__item main-menu__shop">
+            <p class="main-menu__text">Shop<i class="mdi mdi-chevron-down"></i><span class="main-menu__alert">HOT</span>
+            </p>
+            <div class="main-menu__dropdown main-menu__dropdown_size_l">
+              <div class="main-menu__submenu submenu">
+                <div class="submenu__container">
+                  <div class="submenu__wrapper">
+                    <a class="submenu__title" href="#">Category Page Layout</a>
+                  </div>
+                  <ul class="submenu__items">
+                    <li class="submenu__item"><a href="#" class="submenu__link">Left Sidebar</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Right Sidebar</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Filter Toggle</a></li>
+                  </ul>
+                  <div class="submenu__wrapper">
+                    <a class="submenu__title" href="#">Product Page Layout</a>
+                  </div>
+                  <ul class="submenu__items">
+                    <li class="submenu__item"><a href="#" class="submenu__link">Left Image With Thumbs</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Product With Sticky Detail</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Product Gallery Layout</a></li>
+                  </ul>
+                </div>
+                <div class="submenu__container">
+                  <div class="submenu__wrapper">
+                    <a class="submenu__title" href="#">Product Hover Effect</a>
+                  </div>
+                  <ul class="submenu__items">
+                    <li class="submenu__item"><a href="#" class="submenu__link">Center Products Button</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Bottom Fade Effect</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Zoom Fade Effect</a></li>
+                  </ul>
+                  <div class="submenu__wrapper">
+                    <a class="submenu__title" href="#">Product Extended</a>
+                  </div>
+                  <ul class="submenu__items">
+                    <li class="submenu__item"><a href="#" class="submenu__link">Extended Design 01</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Extended Design 02</a></li>
+                    <li class="submenu__item"><a href="#" class="submenu__link">Extended Design 03</a></li>
+                  </ul>
+                </div>
+                <div class="submenu__image-container">
+                  <a href="#" class="submenu__image-link">
+                    <img src="./images/menu-banner-01.webp" alt="banner" class="submenu__image">
+                  </a>
+                </div>
+                <div class="submenu__image-container">
+                  <a href="#" class="submenu__image-link">
+                    <img src="./images/menu-banner-02.webp" alt="banner" class="submenu__image">
+                  </a>
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="main-menu__item main-menu__pages animation-line animation-line_left">
-            <p class="main-menu__text">Pages</p>
-            <i class="mdi mdi-chevron-down"></i>
+          <li class="main-menu__item main-menu__pages main-menu__item_relative">
+            <p class="main-menu__text">Pages<i class="mdi mdi-chevron-down"></i></p>
+            <div class="main-menu__dropdown main-menu__dropdown_size_s">
+              <ul class="main-menu__dropdown-items">
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">About Us</a></li>
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Contact Us</a></li>
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">FAQ's</a></li>
+              </ul>
+            </div>
           </li>
-          <li class="main-menu__item main-menu__blog animation-line animation-line_left">
-            <p class="main-menu__text">Blog</p>
-            <i class="mdi mdi-chevron-down"></i>
+          <li class="main-menu__item main-menu__blog main-menu__item_relative">
+            <p class="main-menu__text">Blog<i class="mdi mdi-chevron-down"></i></p>
+            <div class="main-menu__dropdown main-menu__dropdown_size_s">
+              <ul class="main-menu__dropdown-items">
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Blog Grid</a></li>
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Blog List</a></li>
+                <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Article Page</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="main-menu__item main-menu__look-book animation-line animation-line_left">
-            <p class="main-menu__text">Look Book</p>
-            <i class="mdi mdi-chevron-down"></i>
+          <li class="main-menu__item main-menu__look-book">
+            <p class="main-menu__text">Look Book<i class="mdi mdi-chevron-down"></i></p>
+            <div class="main-menu__dropdown main-menu__dropdown_size_l">
+              <div class="main-menu__submenu submenu">
+                <div class="submenu__image-container">
+                  <a class="submenu__title" href="#">Beauty</a>
+                  <a class="submenu__image-link" href="#">
+                    <img class="submenu__image" src="./images/menu-banner-03.webp" alt="banner">
+                  </a>
+                </div>
+                <div class="submenu__image-container">
+                  <a class="submenu__title" href="#">Cosmetics</a>
+                  <a class="submenu__image-link" href="#">
+                    <img class="submenu__image" src="./images/menu-banner-04.webp" alt="banner">
+                  </a>
+                </div>
+                <div class="submenu__image-container">
+                  <a class="submenu__title" href="#">Skin</a>
+                  <a class="submenu__image-link" href="#">
+                    <img class="submenu__image" src="./images/menu-banner-05.webp" alt="banner">
+                  </a>
+                </div>
+                <div class="submenu__image-container">
+                  <a class="submenu__title" href="#">Spa</a>
+                  <a class="submenu__image-link" href="#">
+                    <img class="submenu__image" src="./images/menu-banner-06.webp" alt="banner">
+                  </a>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
-      <div class="header__right">
+      <div class="header__bottom-right">
         <div class="header__search">
           <svg class="header__search-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -132,8 +239,35 @@
           </p>
         </div>
         <div class="header__account" href="#">
-          <p class="header__account-text">My Account</p>
-          <i class="mdi mdi-chevron-down"></i>
+          <p class="header__account-text">My Account<i class="mdi mdi-chevron-down"></i></p>
+
+          <svg class="header__account-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+            height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path
+                d="M2400 5114 c-322 -40 -591 -171 -815 -398 -199 -201 -313 -415 -372 -696 -24 -118 -24 -382 0 -500 59 -281 174 -496 372 -696 201 -203 421 -322 705 -381 117 -24 380 -24 502 0 270 54 494 174 694 372 202 199 322 421 381 705 24 118 24 382 0 500 -39 185 -110 356 -212 510 -63 95 -258 291 -351 352 -161 107 -335 180 -506 213 -81 16 -328 28 -398 19z m375 -423 c333 -87 594 -350 687 -691 33 -122 33 -338 0 -460 -93 -341 -350 -600 -687 -691 -118 -33 -346 -32 -465 0 -342 92 -599 347 -692 688 -31 112 -31 354 0 466 103 377 407 648 797 710 69 12 281 -2 360 -22z">
+              </path>
+              <path
+                d="M2255 2014 c-16 -2 -66 -9 -110 -15 -478 -62 -943 -351 -1230 -764 -202 -289 -317 -641 -319 -975 -1 -115 1 -128 23 -163 13 -21 42 -50 64 -65 34 -23 52 -27 107 -27 55 0 73 4 107 27 70 46 84 81 95 229 15 219 60 394 148 569 197 395 562 672 1010 767 72 15 134 18 415 17 300 0 339 -2 426 -21 350 -79 644 -266 852 -542 171 -227 263 -482 285 -794 11 -145 28 -184 99 -228 57 -36 154 -34 210 3 59 39 85 87 91 166 10 141 -37 423 -100 601 -201 571 -680 1013 -1258 1161 -179 46 -233 51 -565 55 -176 2 -333 1 -350 -1z">
+              </path>
+            </g>
+          </svg>
+          <div class="header__account-container">
+            <ul class="header__account-items">
+              <li class="header__account-item">
+                <a class="header__account-link" href="#">Log in</a>
+              </li>
+              <li class="header__account-item">
+                <a class="header__account-link" href="#">Create account</a>
+              </li>
+              <li class="header__account-item">
+                <a class="header__account-link" href="#">Wishlist</a>
+              </li>
+              <li class="header__account-item">
+                <a class="header__account-link" href="#">Compare(0)</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <a class="header__cart" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512">
@@ -143,7 +277,7 @@
               </path>
             </g>
           </svg>
-          <p class="header__card-text"><span>0</span></p>
+          <p class="header__cart-text"><span>0</span></p>
         </a>
       </div>
     </div>
@@ -154,7 +288,7 @@
         <div class="swiper-slide">
           <a class="main-slider__container" href="#">
             <img class="main-slider__img" src='./images/slider-01.webp' alt="slide 1">
-            <div class="main-slider__content main-slider__content_left">
+            <div class="main-slider__content main-slider__content_left fade-in-left_active">
               <p class="main-slider__subtitle">Shop Now & Save Up To 25% OFF</p>
               <h2 class="main-slider__title">Big Collection Styles
                 Modern Wear</h2>
@@ -169,12 +303,12 @@
         <div class="swiper-slide">
           <a class="main-slider__container" href="#">
             <img class="main-slider__img" src='./images/slider-02.webp' alt="slide 1">
-            <div class="main-slider__content main-slider__content_right">
+            <div class="main-slider__content main-slider__content_right fade-in-left_active">
               <p class="main-slider__subtitle">Shop Now & Save Up To 25% OFF</p>
               <h2 class="main-slider__title">Big Collection Styles
                 Modern Wear</h2>
               <div class="main-slider__btn">
-                <button class="main-slider__button animated-button ">
+                <button class="main-slider__button animated-button animated-button_white">
                   <span class="main-slider__button-text">Shop Now</span>
                 </button>
               </div>
@@ -190,12 +324,12 @@
       </div>
     </section>
     <section class="categories">
-      <div class="categories__container">
+      <div class="categories__container fade-in-bottom ">
         <p class="categories__subtitle">TOP CATEGORIES</p>
         <h2 class="categories__title">Shop By Categories</h2>
         <p class="categories__text">Add our new arrivals to your weekly lineup.</p>
       </div>
-      <div class="categories__slider categories-slider">
+      <div class="categories__slider categories-slider fade-in-bottom">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="categories-slider__container">
@@ -243,40 +377,50 @@
           </div>
         </div>
       </div>
-      <ul class="categories__bonuses">
-        <li class="categories__bonuses-item">
-          <a class="categories__bonuses-link" href="#">
-            <div class="categories__bonuses-shop"></div>
-            <h5 class="categories__bonuses-title">Shop Worldwide</h5>
-            <p class="categories__bonuses-subtitle">Dropship Worldwide</p>
-          </a>
-        </li>
-        <li class="categories__bonuses-item">
-          <a class="categories__bonuses-link" href="#">
-            <div class="categories__bonuses-saving"></div>
-            <h5 class="categories__bonuses-title">Big Saving Shop</h5>
-            <p class="categories__bonuses-subtitle">Save Big Every Order</p>
-          </a>
-        </li>
-        <li class="categories__bonuses-item">
-          <a class="categories__bonuses-link" href="#">
-            <div class="categories__bonuses-support"></div>
-            <h5 class="categories__bonuses-title">24H 7D Support</h5>
-            <p class="categories__bonuses-subtitle">One-on-one Support</p>
-          </a>
-        </li>
-        <li class="categories__bonuses-item">
-          <a class="categories__bonuses-link" href="#">
-            <div class="categories__bonuses-return"></div>
-            <h5 class="categories__bonuses-title">Money Back Return</h5>
-            <p class="categories__bonuses-subtitle">Cancel Order Anytime</p>
-          </a>
-        </li>
-      </ul>
+      <div class="categories__bonuses swiper categories-slider fade-in-bottom">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="categories__bonuses-item">
+              <a class="categories__bonuses-link" href="#">
+                <div class="categories__bonuses-shop"></div>
+                <h5 class="categories__bonuses-title">Shop Worldwide</h5>
+                <p class="categories__bonuses-subtitle">Dropship Worldwide</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="categories__bonuses-item">
+              <a class="categories__bonuses-link" href="#">
+                <div class="categories__bonuses-saving"></div>
+                <h5 class="categories__bonuses-title">Big Saving Shop</h5>
+                <p class="categories__bonuses-subtitle">Save Big Every Order</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="categories__bonuses-item">
+              <a class="categories__bonuses-link" href="#">
+                <div class="categories__bonuses-support"></div>
+                <h5 class="categories__bonuses-title">24H 7D Support</h5>
+                <p class="categories__bonuses-subtitle">One-on-one Support</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="categories__bonuses-item">
+              <a class="categories__bonuses-link" href="#">
+                <div class="categories__bonuses-return"></div>
+                <h5 class="categories__bonuses-title">Money Back Return</h5>
+                <p class="categories__bonuses-subtitle">Cancel Order Anytime</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="trending">
-      <div class="trending__wrapper">
-        <div class="trending__container">
+    <section class="trending fade-in-bottom">
+      <div class="trending__wrapper ">
+        <div class="trending__container ">
           <h2 class="trending__title">Trending Products</h2>
           <div class="trending__buttons">
             <input class="trending__input" type="radio" name="trending" id="new-product" value="new" checked>
@@ -287,7 +431,7 @@
             <label class="trending__label animation-line animation-line_center" for="top-selling">Top Selling</label>
           </div>
         </div>
-        <div class="trending__slider-wrapper trending__slider-wrapper_active">
+        <div class="trending__slider-wrapper trending__slider-wrapper_active ">
           <div class="trending__slider-container">
             <div class="trending__new-products-slider slider swiper">
               <div class="swiper-wrapper">
@@ -495,8 +639,8 @@
                   <article class="trending__card card">
                     <div class="card__image">
                       <a class="card__image-link" href="#">
-                        <img class="card__img" src="./images/new-products-01.webp" alt="product 1">
-                        <img class="card__img card__img_hidden" src="./images/new-products-02.webp" alt="product 1">
+                        <img class="card__img" src="./images/slider-11.webp" alt="product 1">
+                        <img class="card__img card__img_hidden" src="./images/slider-12.webp" alt="product 1">
                       </a>
                       <div class="card__sold-out">
                         Sold Out
@@ -894,11 +1038,13 @@
               </div>
             </div>
           </div>
-          <div class="slider__arrow trending__arrow-prev trending__new-products-prev">
-            <i class="mdi mdi-chevron-left"></i>
-          </div>
-          <div class="slider__arrow trending__arrow-next trending__new-products-next">
-            <i class="mdi mdi-chevron-right"></i>
+          <div class="trending__arrow-container">
+            <div class="slider__arrow trending__arrow-prev trending__new-products-prev">
+              <i class="mdi mdi-chevron-left"></i>
+            </div>
+            <div class="slider__arrow trending__arrow-next trending__new-products-next">
+              <i class="mdi mdi-chevron-right"></i>
+            </div>
           </div>
         </div>
         <div class="trending__slider-wrapper">
@@ -1508,11 +1654,13 @@
               </div>
             </div>
           </div>
-          <div class="slider__arrow trending__arrow-prev trending__featured-prev">
-            <i class="mdi mdi-chevron-left"></i>
-          </div>
-          <div class="slider__arrow trending__arrow-next trending__featured-next">
-            <i class="mdi mdi-chevron-right"></i>
+          <div class="trending__arrow-container">
+            <div class="slider__arrow trending__arrow-prev trending__featured-prev">
+              <i class="mdi mdi-chevron-left"></i>
+            </div>
+            <div class="slider__arrow trending__arrow-next trending__featured-next">
+              <i class="mdi mdi-chevron-right"></i>
+            </div>
           </div>
         </div>
         <div class="trending__slider-wrapper">
@@ -1523,8 +1671,8 @@
                   <article class="trending__card card">
                     <div class="card__image">
                       <a class="card__image-link" href="#">
-                        <img class="card__img" src="./images/new-products-01.webp" alt="product 1">
-                        <img class="card__img card__img_hidden" src="./images/new-products-02.webp" alt="product 1">
+                        <img class="card__img" src="./images/slider-11.webp" alt="product 1">
+                        <img class="card__img card__img_hidden" src="./images/slider-12.webp" alt="product 1">
                       </a>
                       <div class="card__sold-out">
                         Sold Out
@@ -1623,8 +1771,8 @@
                   <article class="trending__card card">
                     <div class="card__image">
                       <a class="card__image-link" href="#">
-                        <img class="card__img" src="./images/new-products-01.webp" alt="product 1">
-                        <img class="card__img card__img_hidden" src="./images/new-products-02.webp" alt="product 1">
+                        <img class="card__img" src="./images/slider-21.webp" alt="product 1">
+                        <img class="card__img card__img_hidden" src="./images/slider-22.webp" alt="product 1">
                       </a>
                       <div class="card__sold-out">
                         Sold Out
@@ -2122,11 +2270,13 @@
               </div>
             </div>
           </div>
-          <div class="slider__arrow trending__arrow-prev trending__top-selling-prev">
-            <i class="mdi mdi-chevron-left"></i>
-          </div>
-          <div class="slider__arrow trending__arrow-next trending__top-selling-next">
-            <i class="mdi mdi-chevron-right"></i>
+          <div class="trending__arrow-container">
+            <div class="slider__arrow trending__arrow-prev trending__top-selling-prev">
+              <i class="mdi mdi-chevron-left"></i>
+            </div>
+            <div class="slider__arrow trending__arrow-next trending__top-selling-next">
+              <i class="mdi mdi-chevron-right"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -2134,7 +2284,7 @@
     <section class="banners">
       <div class="banners__wrapper">
         <div class="banners__column">
-          <div class="banners__row">
+          <div class="banners__row fade-in-bottom">
             <a class="banners__item" href="#">
               <img class="banners__image" src="./images/banner-01.webp" alt="banner 1">
               <div class="banners__content banners__content_type_1">
@@ -2144,14 +2294,14 @@
               </div>
             </a>
             <a class="banners__item" href="#">
-              <img class="banners__image" src="./images/banner-02.webp" alt="banner 2">
+              <img class="banners__image banners__image_transform" src="./images/banner-02.webp" alt="banner 2">
               <div class="banners__content banners__content_type_2">
                 <p class="banners__subtitle">Big Discounts</p>
                 <h3 class="banners__title">Best of Women Styles</h3>
               </div>
             </a>
           </div>
-          <a class="banners__item" href="#">
+          <a class="banners__item fade-in-bottom" href="#">
             <img class="banners__image" src="./images/banner-03.webp" alt="banner 3">
             <div class="banners__content banners__content_type_3">
               <p class="banners__subtitle">Season Sale 2021</p>
@@ -2160,7 +2310,7 @@
             </div>
           </a>
         </div>
-        <div class="banners__slider-container">
+        <div class="banners__slider-container fade-in-bottom">
           <div class="banners__slider swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide banners__slide">
@@ -2206,8 +2356,8 @@
         </div>
       </div>
     </section>
-    <section class="special">
-      <div class="special__wrapper">
+    <section class="special fade-in-bottom">
+      <div class="special__wrapper ">
         <div class="special__container">
           <h2 class="special__title">Special Collection</h2>
           <a class="special__link animation-line animation-line_center" href="#">View All</a>
@@ -2819,27 +2969,29 @@
               </div>
             </div>
           </div>
-          <div class="slider__arrow special__arrow-prev">
-            <i class="mdi mdi-chevron-left"></i>
-          </div>
-          <div class="slider__arrow special__arrow-next">
-            <i class="mdi mdi-chevron-right"></i>
+          <div class="special__arrow-container">
+            <div class="slider__arrow special__arrow-prev">
+              <i class="mdi mdi-chevron-left"></i>
+            </div>
+            <div class="slider__arrow special__arrow-next">
+              <i class="mdi mdi-chevron-right"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="news">
-      <div class="news__wrapper">
+      <div class="news__wrapper fade-in-bottom">
         <div class="news__container">
           <p class="news__subtitle">DISCOVER WHATS NEW</p>
           <h2 class="news__title">Latest News</h2>
           <p class="news__text">Add our new arrivals to your weekly lineup</p>
         </div>
-        <div class="news__slider-wrapper">
+        <div class="news__slider-wrapper fade-in-bottom">
           <div class="news__slider-container">
             <div class="news__slider slider swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide news__slide">
                   <article class="card-news">
                     <div class="card-news__image-container">
                       <a class="card-news__image-link" href="#">
@@ -2850,13 +3002,14 @@
                     </div>
                     <div class="card-news__content">
                       <a class="card-news__title" href="#">Now we are certified websites</a>
-                      <p class="card-news__text">Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when ...
+                      <p class="card-news__text">Lorem Ipsum has been the industrys standard dummy text ever since the
+                        1500s, when ...
                       </p>
                       <a class="card-news__link" href="#">Read More</a>
                     </div>
                   </article>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide news__slide">
                   <article class="card-news">
                     <div class="card-news__image-container">
                       <a class="card-news__image-link" href="#">
@@ -2867,13 +3020,14 @@
                     </div>
                     <div class="card-news__content">
                       <a class="card-news__title" href="#">Upon of seasons earth dominion</a>
-                      <p class="card-news__text">Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when ...
+                      <p class="card-news__text">Lorem Ipsum has been the industrys standard dummy text ever since the
+                        1500s, when ...
                       </p>
                       <a class="card-news__link" href="#">Read More</a>
                     </div>
                   </article>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide news__slide">
                   <article class="card-news">
                     <div class="card-news__image-container">
                       <a class="card-news__image-link" href="#">
@@ -2884,13 +3038,14 @@
                     </div>
                     <div class="card-news__content">
                       <a class="card-news__title" href="#">Share the Love</a>
-                      <p class="card-news__text">Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when ...
+                      <p class="card-news__text">Lorem Ipsum has been the industrys standard dummy text ever since the
+                        1500s, when ...
                       </p>
                       <a class="card-news__link" href="#">Read More</a>
                     </div>
                   </article>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide news__slide">
                   <article class="card-news">
                     <div class="card-news__image-container">
                       <a class="card-news__image-link" href="#">
@@ -2901,7 +3056,8 @@
                     </div>
                     <div class="card-news__content">
                       <a class="card-news__title" href="#">From Now we are certified web</a>
-                      <p class="card-news__text">Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when ...
+                      <p class="card-news__text">Lorem Ipsum has been the industrys standard dummy text ever since the
+                        1500s, when ...
                       </p>
                       <a class="card-news__link" href="#">Read More</a>
                     </div>
@@ -2910,55 +3066,57 @@
               </div>
             </div>
           </div>
-          <div class="slider__arrow news__arrow-prev">
-            <i class="mdi mdi-chevron-left"></i>
-          </div>
-          <div class="slider__arrow news__arrow-next">
-            <i class="mdi mdi-chevron-right"></i>
+          <div class="news__arrow-container">
+            <div class="slider__arrow news__arrow-prev">
+              <i class="mdi mdi-chevron-left"></i>
+            </div>
+            <div class="slider__arrow news__arrow-next">
+              <i class="mdi mdi-chevron-right"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="inst">
       <div class="inst__wrapper">
-        <div class="inst__container">
+        <div class="inst__container fade-in-bottom">
           <i class="mdi mdi-instagram"></i>
           <a class="inst__title" href="#">Instagram Feeds<i class="mdi mdi-open-in-new"></i></a>
           <p class="inst__subtitle">Add our new arrivals to your weekly lineup.</p>
         </div>
-        <div class="inst__slider slider swiper">
+        <div class="inst__slider slider swiper fade-in-bottom">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide inst__slide">
               <a class="inst__slider-container" href="#">
                 <img class="inst__slider-image" src="./images/inst-01.webp" alt="slide">
                 <button class="inst__button"><i class="mdi mdi-magnify"></i></button>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide inst__slide">
               <a class="inst__slider-container" href="#">
                 <img class="inst__slider-image" src="./images/inst-02.webp" alt="slide">
                 <button class="inst__button"><i class="mdi mdi-magnify"></i></button>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide inst__slide">
               <a class="inst__slider-container" href="#">
                 <img class="inst__slider-image" src="./images/inst-03.webp" alt="slide">
                 <button class="inst__button"><i class="mdi mdi-magnify"></i></button>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide inst__slide">
               <a class="inst__slider-container" href="#">
                 <img class="inst__slider-image" src="./images/inst-04.webp" alt="slide">
                 <button class="inst__button"><i class="mdi mdi-magnify"></i></button>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide inst__slide">
               <a class="inst__slider-container" href="#">
                 <img class="inst__slider-image" src="./images/inst-05.webp" alt="slide">
                 <button class="inst__button"><i class="mdi mdi-magnify"></i></button>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide inst__slide">
               <a class="inst__slider-container" href="#">
                 <img class="inst__slider-image" src="./images/inst-06.webp" alt="slide">
                 <button class="inst__button"><i class="mdi mdi-magnify"></i></button>
@@ -2970,41 +3128,46 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__column">
+    <div class="footer__wrapper fade-in-bottom">
+      <div class="footer__column footer__column_d">
         <h3 class="footer__title">Information</h3>
-          <ul class="footer__items">
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Search</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Legal Notice</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">About us</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Terms And Condition</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Contact us</a></li>
-          </ul>
+        <ul class="footer__items">
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Search</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Legal Notice</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">About us</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Terms And Condition</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Contact us</a></li>
+        </ul>
       </div>
-      <div class="footer__column">
+      <div class="footer__column footer__column_d">
         <h3 class="footer__title">Our Company</h3>
-          <ul class="footer__items">
-            <li class="footer__item"><a href="#" class="footer__text footer__link">FAQ's</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Legal Notice</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Delivery</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Wishlist</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Shipping and Returns</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">Contact us</a></li>
-            <li class="footer__item"><a href="#" class="footer__text footer__link">All Collection</a></li>
-          </ul>
+        <ul class="footer__items">
+          <li class="footer__item"><a href="#" class="footer__text footer__link">FAQ's</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Legal Notice</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Delivery</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Wishlist</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Shipping and Returns</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Contact us</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">All Collection</a></li>
+        </ul>
       </div>
-      <div class="footer__column">
+      <div class="footer__column footer__column_d">
         <h3 class="footer__title">Store Information</h3>
-          <ul class="footer__items">
-            <li class="footer__item"><i class="mdi mdi-map-marker"></i><p class="footer__adress footer__text">4030, Central Bazzar,<br>Varachha Road, Surat.</p></li>
-            <li class="footer__item"><i class="mdi mdi-phone"></i><a href="tel:092770-77088" class="footer__tel footer__text footer__link">092770-77088</a></li>
-            <li class="footer__item"><i class="mdi mdi-email-outline"></i><a href="mailto:sales@yourcompany.com" class="footer__email footer__link footer__text">sales@yourcompany.com</a></li>
-          </ul>
+        <ul class="footer__items">
+          <li class="footer__item"><i class="mdi mdi-map-marker"></i>
+            <p class="footer__adress footer__text">4030, Central Bazzar,<br>Varachha Road, Surat.</p>
+          </li>
+          <li class="footer__item"><i class="mdi mdi-phone"></i><a href="tel:092770-77088"
+              class="footer__tel footer__text footer__link">092770-77088</a></li>
+          <li class="footer__item"><i class="mdi mdi-email-outline"></i><a href="mailto:sales@yourcompany.com"
+              class="footer__email footer__link footer__text">sales@yourcompany.com</a></li>
+        </ul>
       </div>
       <div class="footer__column">
         <form class="footer__form">
           <h3 class="footer__title"><i class="mdi mdi-email-open-outline"></i>Newsletter</h3>
-          <p class="footer__text footer__text_form">Exceptional quality. Ethical factories. Radical Transparency. Sign up to enjoy free U.S. shipping and returns on your first order.</p>
+          <p class="footer__text footer__text_form">Exceptional quality. Ethical factories. Radical Transparency. Sign
+            up to enjoy free U.S. shipping and returns on your first order.</p>
           <div class="footer__form-container">
             <input class="footer__input footer__text" placeholder="email@example.com" type="email">
             <button class="footer__button animated-button_orange animated-button">Subscribe</button>
@@ -3012,13 +3175,58 @@
         </form>
       </div>
     </div>
+    <div class="footer__dropdown">
+      <div class="footer__dropdown-container">
+        <div class="footer__dropdown-btn">
+          <h3 class="footer__title">Information</h3>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <ul class="footer__dropdown-items">
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Search</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Legal Notice</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">About us</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Terms And Condition</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer__dropdown-container">
+        <div class="footer__dropdown-btn">
+          <h3 class="footer__title">Our Company</h3>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <ul class="footer__dropdown-items">
+          <li class="footer__item"><a href="#" class="footer__text footer__link">FAQ's</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Legal Notice</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Delivery</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Wishlist</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Shipping and Returns</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">Contact us</a></li>
+          <li class="footer__item"><a href="#" class="footer__text footer__link">All Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer__dropdown-container">
+        <div class="footer__dropdown-btn">
+          <h3 class="footer__title">Store Information</h3>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <ul class="footer__dropdown-items">
+          <li class="footer__item"><i class="mdi mdi-map-marker"></i>
+            <p class="footer__adress footer__text">4030, Central Bazzar,<br>Varachha Road, Surat.</p>
+          </li>
+          <li class="footer__item"><i class="mdi mdi-phone"></i><a href="tel:092770-77088"
+              class="footer__tel footer__text footer__link">092770-77088</a></li>
+          <li class="footer__item"><i class="mdi mdi-email-outline"></i><a href="mailto:sales@yourcompany.com"
+              class="footer__email footer__link footer__text">sales@yourcompany.com</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="footer__container">
       <div class="footer__copy">
         <div class="footer__copy-left">
-          <p class="footer__copy-text">Copyright © 2022&nbsp;</p>
-          <a class="footer__copy-text" href="#">Theme: Cosmos (Password: 1)</a>
-          <p class="footer__copy-text">&nbsp;|&nbsp;</p>
-          <a class="footer__copy-text" href="#">Powered by Shopify</a>
+          <p class="footer__copy-text">Copyright&nbsp;©&nbsp;2022 &nbsp;</p>
+          <a class="footer__copy-text" href="#">Theme:&nbsp;Cosmos&nbsp;(Password:&nbsp;1)</a>
+          <p class="footer__copy-text">&nbsp; | &nbsp;</p>
+          <a class="footer__copy-text" href="#">Powered&nbsp;by&nbsp;Shopify</a>
         </div>
         <div class="footer__copy-right">
           <a class="footer__copy-social" href="#"><i class="mdi mdi-twitter"></i></a>
@@ -3032,9 +3240,137 @@
   <div class="menu">
     <button class="menu__close"><i class="mdi mdi-close"></i></button>
     <ul class="menu__items">
-      <li class="menu__item"><a class="menu__link animation-line animation-line_left" href="#">Cosmetics Collection</a>
+      <li class="menu__item menu__item_dropdown ">
+        <div class="menu__item-container">
+          <p class="menu__link animation-line animation-line_left">Home <span
+              class="main-menu__alert menu__alert">NEW</span></p>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <ul class="main-menu__dropdown-items menu__dropdown">
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Cosmetic 1</a></li>
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Cosmetic 2</a></li>
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Cosmetic 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item_dropdown ">
+        <div class="menu__item-container">
+          <p class="menu__link animation-line animation-line_left">Shop <span
+              class="main-menu__alert menu__alert">NEW</span></p>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <div class="main-menu__dropdown-items menu__dropdown">
+          <div class="main-menu__submenu submenu">
+            <div class="submenu__container">
+              <div class="submenu__wrapper">
+                <a class="submenu__title" href="#">Category Page Layout</a>
+              </div>
+              <ul class="submenu__items">
+                <li class="submenu__item"><a href="#" class="submenu__link">Left Sidebar</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Right Sidebar</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Filter Toggle</a></li>
+              </ul>
+              <div class="submenu__wrapper">
+                <a class="submenu__title" href="#">Product Page Layout</a>
+              </div>
+              <ul class="submenu__items">
+                <li class="submenu__item"><a href="#" class="submenu__link">Left Image With Thumbs</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Product With Sticky Detail</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Product Gallery Layout</a></li>
+              </ul>
+            </div>
+            <div class="submenu__container">
+              <div class="submenu__wrapper">
+                <a class="submenu__title" href="#">Product Hover Effect</a>
+              </div>
+              <ul class="submenu__items">
+                <li class="submenu__item"><a href="#" class="submenu__link">Center Products Button</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Bottom Fade Effect</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Zoom Fade Effect</a></li>
+              </ul>
+              <div class="submenu__wrapper">
+                <a class="submenu__title" href="#">Product Extended</a>
+              </div>
+              <ul class="submenu__items">
+                <li class="submenu__item"><a href="#" class="submenu__link">Extended Design 01</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Extended Design 02</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__link">Extended Design 03</a></li>
+              </ul>
+            </div>
+            <div class="submenu__image-container">
+              <a href="#" class="submenu__image-link">
+                <img src="./images/menu-banner-01.webp" alt="banner" class="submenu__image">
+              </a>
+            </div>
+            <div class="submenu__image-container">
+              <a href="#" class="submenu__image-link">
+                <img src="./images/menu-banner-02.webp" alt="banner" class="submenu__image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="menu__item menu__item_dropdown ">
+        <div class="menu__item-container">
+          <p class="menu__link animation-line animation-line_left">Pages</p>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <ul class="main-menu__dropdown-items menu__dropdown">
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">About Us</a></li>
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Contact Us</a></li>
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">FAQ's</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item_dropdown ">
+        <div class="menu__item-container">
+          <p class="menu__link animation-line animation-line_left">Blog</p>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <ul class="main-menu__dropdown-items menu__dropdown">
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Blog Grid</a></li>
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Blog List</a></li>
+          <li class="main-menu__dropdown-item"><a href="#" class="main-menu__dropdown-link">Article Page</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item_dropdown ">
+        <div class="menu__item-container">
+          <p class="menu__link animation-line animation-line_left">Look Book</p>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+        <div class="menu__dropdown">
+          <div class="submenu">
+            <div class="submenu__image-container">
+              <a class="submenu__title" href="#">Beauty</a>
+              <a class="submenu__image-link" href="#">
+                <img class="submenu__image" src="./images/menu-banner-03.webp" alt="banner">
+              </a>
+            </div>
+            <div class="submenu__image-container">
+              <a class="submenu__title" href="#">Cosmetics</a>
+              <a class="submenu__image-link" href="#">
+                <img class="submenu__image" src="./images/menu-banner-04.webp" alt="banner">
+              </a>
+            </div>
+            <div class="submenu__image-container">
+              <a class="submenu__title" href="#">Skin</a>
+              <a class="submenu__image-link" href="#">
+                <img class="submenu__image" src="./images/menu-banner-05.webp" alt="banner">
+              </a>
+            </div>
+            <div class="submenu__image-container">
+              <a class="submenu__title" href="#">Spa</a>
+              <a class="submenu__image-link" href="#">
+                <img class="submenu__image" src="./images/menu-banner-06.webp" alt="banner">
+              </a>
+            </div>
+          </div>
+        </div>
       </li>
       <li class="menu__item">
+        <div class="menu__collection">
+          <a class="menu__link animation-line animation-line_left" href="#">Cosmetics Collection</a>
+        </div>
+      </li>
+      <li class="menu__item menu__item_dropdown">
         <div class="menu__face-care">
           <div class="menu__item-container">
             <a class="menu__link animation-line animation-line_left" href="#">Face Care</a>
@@ -3053,7 +3389,7 @@
           </ul>
           </a>
         </div>
-      <li class="menu__item">
+      <li class="menu__item menu__item_dropdown">
         <div class="menu__spa">
           <div class="menu__item-container">
             <a class="menu__link animation-line animation-line_left" href="#">Spa</a>
@@ -3072,7 +3408,7 @@
           </ul>
         </div>
       </li>
-      <li class="menu__item">
+      <li class="menu__item menu__item_dropdown">
         <div class="menu__highlighter">
           <div class="menu__item-container">
             <a class="menu__link animation-line animation-line_left" href="#">Highlighter</a>
@@ -3094,7 +3430,7 @@
           </ul>
         </div>
       </li>
-      <li class="menu__item">
+      <li class="menu__item menu__item_dropdown">
         <div class="menu__foundation">
           <div class="menu__item-container">
             <a class="menu__link animation-line animation-line_left" href="#">Foundation</a>
@@ -3113,7 +3449,7 @@
           </ul>
         </div>
       </li>
-      <li class="menu__item">
+      <li class="menu__item menu__item_dropdown">
         <div class="menu__fregrance">
           <div class="menu__item-container">
             <a class="menu__link animation-line animation-line_left" href="#">Fregrance</a>

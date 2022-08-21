@@ -133,7 +133,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 0 30px;
+}
+.header__sticky {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background-color: #FFF;
+  transition: all 0.4s ease-in-out;
+}
+.header__bottom-left {
+  display: flex;
 }
 .header__menu-container {
   margin: 0 0 2px;
@@ -148,6 +159,7 @@
   border: none;
   margin: 10px 15px 10px 0;
   padding: 0;
+  cursor: pointer;
 }
 .header__menu::after {
   content: '';
@@ -157,6 +169,7 @@
   top: 5px;
   left: 0;
   background-color: black;
+  cursor: pointer;
 }
 .header__menu::before {
   content: '';
@@ -166,9 +179,14 @@
   top: -5px;
   left: 0;
   background-color: black;
+  cursor: pointer;
 }
 .header__logo {
   margin-top: 3px;
+}
+.header__bottom-right {
+  display: flex;
+  align-items: center;
 }
 .header__search {
   color: black;
@@ -201,6 +219,54 @@
   display: flex;
   align-items: center;
   margin-right: 30px;
+  padding: 12px 0;
+  position: relative;
+  cursor: pointer;
+}
+.header__account-icon {
+  width: 15px;
+  height: 15px;
+  display: none;
+}
+.header__account_active .mdi {
+  transform: rotate(180deg);
+}
+.header__account-container {
+  position: absolute;
+  z-index: 10;
+  background-color: #FFF;
+  top: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  right: 0;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 15px;
+  transform-origin: center top;
+  transform: scaleY(0);
+  transition: all 0.4s ease-in-out;
+}
+.header__account_active .header__account-container{
+  transform: scaleY(1);
+}
+.header__account-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header__account-link {
+  color: #777;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+.header__account-link:hover {
+  color: #111;
 }
 .header__account-text {
   margin-right: 4px;
@@ -210,7 +276,7 @@
   align-items: center;
   text-decoration: none;
 }
-.header__card-text {
+.header__cart-text {
   margin-left: 5px;
   background-color: black;
   color: white;
@@ -233,4 +299,88 @@
 }
 .header__cart:hover svg {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 1122px) {
+
+  .header__sales {
+    font-size: 11px;
+  }
+  .header__sales .mdi {
+    font-size: 13px;
+  }
+  .header__destination {
+    font-size: 11px;
+  }
+  .header__center .mdi {
+    font-size: 13px;
+  }
+  .header__phone {
+    font-size: 11px;
+  }
+  .header__email {
+    font-size: 11px;
+  }
+}
+@media (max-width: 991px) {
+  .header__sales {
+    display: none;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__email {
+    display: none;
+  }
+  .header__destination {
+    font-size: 13px;
+  }
+  .header__bottom-left {
+    justify-content: space-between;
+    flex: 1 1 auto;
+    align-items: center;
+  }
+  .header__logo {
+    padding: 23px 0;
+  }
+  .header__bottom-right {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+  }
+  .header__main-menu {
+    display: none;
+  }
+  .header__search {
+    margin-right: 10px;
+  }
+  .header__search-text {
+    display: none;
+  }
+  .header__account {
+    margin-right: 15px;
+  }
+  .header__account-text {
+    display: none;
+  }
+  .header__account-icon {
+    display: block;
+  }
+  .header__cart {
+    position: relative;
+  }
+  .header__cart-text {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .header__destination {
+    font-size: 9px;
+  }
+  .header__bottom-left {
+    justify-content: flex-start;
+  }
 }

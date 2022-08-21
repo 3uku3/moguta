@@ -1,0 +1,30 @@
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeInBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.fade-in-left .fade-in-left_active {
+  animation: 1700ms ease-in-out 0s normal none 1 running fadeInLeft;
+}
+.fade-in-bottom {
+  opacity: 0;
+}
+.fade-in-bottom_active {
+  animation: 1700ms ease-in-out 0s normal none 1 running fadeInBottom;
+}

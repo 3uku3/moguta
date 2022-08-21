@@ -1,5 +1,6 @@
 .categories {
   overflow: hidden;
+  margin-bottom: 80px;
 }
 .categories__container {
   display: flex;
@@ -131,4 +132,35 @@
 .categories__bonuses-item:hover .categories__bonuses-return {
   background-color: #ff8149;
   transform: translateY(-20px);
+}
+
+@media (max-width: 1199px) {
+  .categories__subtitle {
+    font-size: 12px;
+  }
+  .categories__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .categories__text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .categories__subtitle {
+    padding: 6px 12px;
+  }
+  .categories__title {
+    font-size: 24px;
+  }
+  .categories__text {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .categories__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }

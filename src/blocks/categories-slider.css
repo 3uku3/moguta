@@ -1,16 +1,18 @@
 .categories-slider {
-  margin: 0 180px;
+  margin: 0 auto;
   overflow-x: hidden;
+  width: 90%;
 }
 .categories-slider__container {
   position: relative;
   margin-bottom: 80px;
+  transition: all 0.4s ease-in-out;
 }
 .categories-slider__image {
   overflow: hidden;
   margin-right: 20px;
 }
-.swiper-slide:nth-of-type(2n) .categories-slider__container{
+.swiper-slide:nth-of-type(2n).swiper-slide-visible .categories-slider__container{
   margin-top: 50px;
 }
 .categories-slider__img {

@@ -1,13 +1,13 @@
 .menu {
   height: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   background-color: #FFF;
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  width: 350px;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
@@ -32,15 +32,19 @@
   padding: 0;
 }
 .menu__item {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
-.menu__item:first-of-type {
-  margin-bottom: 24px;
+.menu__item_mobile {
+  display: none;
 }
 .menu__item-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 11.7px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.menu__collection {
+  margin-bottom: 20px;
 }
 .menu__item-container .mdi {
   cursor: pointer;
@@ -56,6 +60,14 @@
   line-height: 18px;
   font-weight: 600;
   letter-spacing: 1px;
+  position: relative;
+  margin: 0 0 5px;
+}
+.menu__alert {
+  position: absolute;
+  right: auto;
+  font-size: 8px;
+  line-height: 12px;
 }
 .menu__dropdown {
   list-style: none;
@@ -63,16 +75,58 @@
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
+.menu__dropdown-item {
+  padding-top: 3px;
+  margin-bottom: 5px;
+}
+.menu__dropdown-item:first-of-type {
+  margin-top: 8px;
+}
+.menu__dropdown-item:last-of-type {
+  padding-bottom: 8px;
+}
 .menu__dropdown-link {
   text-decoration: none;
-  color: #111111;
-  font-family: 'Cormorant';
-  font-size: 16px;
+  color: #777;
+  font-family: 'Roboto';
+  font-size: 13px;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
+  display: block;
+  padding-bottom: 3px;
 }
 .menu__dropdown_hidden {
   height: 0 !important;
   visibility: hidden;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    height: auto;
+    position: absolute;
+    top: 113px;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: center top;
+  }
+  .menu__item_mobile {
+    display: block;
+  }
+  .menu_active {
+    height: auto;
+    transform: scaleY(1);
+  }
+  .menu__close {
+    display: none;
+  }
+  .menu__items {
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .menu__dropdown {
+    padding-left: 20px;
+  }
 }

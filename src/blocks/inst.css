@@ -1,5 +1,5 @@
 .inst__wrapper {
-  width: 80%;
+  max-width: 1600px;
   margin: 0 auto 80px;
 }
 .inst__container {
@@ -60,6 +60,10 @@
 }
 .inst__slider-image {
   display: block;
+  width: 100%;
+}
+.inst__slide {
+  padding: 0 5px;
 }
 .inst__button {
   color: #FFF;
@@ -85,4 +89,38 @@
 .inst__button:hover {
   background-color: #ff8149;
   border-color: #ff8149;
+}
+@media (max-width: 1599px) {
+  .inst__wrapper {
+    margin: 0 22px 80px;
+  }
+}
+@media (max-width: 1299px) {
+  .inst__title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 12px;
+  }
+}
+@media (max-width: 991px) {
+  .inst__title {
+    font-size: 28px;
+    margin: 0 0 8px;
+  }
+  .inst__subtitle {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .inst__button{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .inst__slider-container::before {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 380px) {
+  .inst__title {
+    font-size: 24px;
+  }
 }

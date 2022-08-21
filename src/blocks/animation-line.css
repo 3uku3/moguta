@@ -14,6 +14,9 @@
 .animation-line_left:hover::after {
   width: 100%;
 }
+.animation-line__left_active::after {
+  width: 100%;
+}
 .animation-line_center::after {
   content: "";
   left: 0px;

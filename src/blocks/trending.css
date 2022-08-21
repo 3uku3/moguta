@@ -5,7 +5,7 @@
 .trending__wrapper {
   margin: 0 auto;
   position: relative;
-  width: 85%;
+  max-width: 1600px;
   padding: 80px 0 80px;
 }
 .trending__container {
@@ -37,6 +37,7 @@
   letter-spacing: 1px;
   position: relative;
   padding: 8px 20px;
+  cursor: pointer;
 }
 .trending__label:hover {
   color: #111;
@@ -67,4 +68,57 @@
 .trending__wrapper:hover .trending__arrow-next,
 .trending__wrapper:hover .trending__arrow-prev {
   opacity: 1;
+}
+
+@media (max-width: 1199px) {
+  .trending__title {
+    font-size: 30px;
+  }
+  .trending__label {
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 991px) {
+  .trending__arrow-container {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .trending__arrow-next {
+    position: static;
+    margin: 0;
+    opacity: 1;
+  }
+  .trending__arrow-prev {
+    position: static;
+    height: fit-content;
+    margin: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .trending__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .trending__wrapper {
+    width: 95%;
+  }
+}
+@media (max-width: 610px) {
+  .trending__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .trending__title {
+    font-size: 22px;
+  }
+  .trending__label {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
 }

@@ -12,6 +12,7 @@
   position: relative;
   z-index: 1;
   display: block;
+  width: 100%;
 }
 .card__img_hidden {
   position: absolute;
@@ -364,4 +365,97 @@
 }
 .card__counter-btn:hover {
   background-color: #e5e5e5;
+}
+
+@media (max-width: 1499px) {
+  .card {
+    width: 262px;
+  }
+}
+@media (max-width: 1399px) {
+  .card {
+    width: 285px;
+  }
+}
+@media (max-width: 1299px) {
+  .card {
+    width: 262px;
+  }
+}
+@media (max-width: 1199px) {
+  .card {
+    width: 293px;
+  }
+}
+@media (max-width: 991px) {
+  .card {
+    width: 220px;
+  }
+  .card__new {
+    left: 15px;
+  }
+  .card__sale {
+    left: 15px;
+  }
+  .card__image-buttons {
+    right: 0;
+    bottom: 30px;
+  }
+  .card__stars {
+    position: static;
+    transform: none;
+    background: none;
+    margin-top: 10px;
+  }
+  .card:hover .card__description-price {
+    transform: none;
+    opacity: 1;
+  }
+  .card__description-buttons {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card__add {
+    position: static;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+  .card__sold-out-btn {
+    position: static;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+  .card__counter {
+    position: static;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    width: auto;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .card__description-title {
+    font-size: 13px;
+  }
+  .card__current-price {
+    font-size: 12px;
+  }
+  .card__current-sale {
+    font-size: 12px;
+  }
+  .card__old-price {
+    font-size: 10px;
+  }
+  .card__add {
+    font-size: 12px;
+  }
+  .card__counter-btn {
+    height: 35px;
+  }
+  .card__counter-input {
+    font-size: 12px;
+  }
 }

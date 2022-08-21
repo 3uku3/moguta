@@ -1,5 +1,7 @@
 @import '../vendor/fonts.css';
+@import '../blocks/body.css';
 @import '../blocks/header.css';
+@import '../blocks/search.css';
 @import '../blocks/dropdown.css';
 @import '../blocks/slider.css';
 @import '../blocks/main-menu.css';
@@ -17,3 +19,5 @@
 @import '../blocks/card-news.css';
 @import '../blocks/inst.css';
 @import '../blocks/footer.css';
+@import '../blocks/submenu.css';
+@import '../blocks/animation-fadeIn.css';
