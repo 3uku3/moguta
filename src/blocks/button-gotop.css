@@ -1,0 +1,25 @@
+.button-gotop {
+  position: fixed;
+  background: none;
+  border: none;
+  background-color: #FF8149;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  bottom: 40px;
+  right: 40px;
+  z-index: 11;
+}
+.button-gotop:hover {
+  background-color: #222;
+  transform: translateY(-6px);
+}
+.button-gotop .mdi {
+  font-size: 20px;
+  color: #FFF;
+}
+.button-gotop_hidden {
+  opacity: 0;
+  visibility: hidden;
+}

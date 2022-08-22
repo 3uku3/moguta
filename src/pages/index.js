@@ -23,6 +23,11 @@ const searchContainer = document.querySelector('.search');
 const menuArray = Array.from(document.querySelectorAll('.menu__item_dropdown'));
 const animationFadeInBottomArr = Array.from(document.querySelectorAll('.fade-in-bottom'));
 
+const buttonScrollTop = document.querySelector('.button-gotop');
+
+const popupBottom = document.querySelector('.popup-bottom');
+const popupBottomClose = popupBottom.querySelector('.popup-bottom__close');
+
 let scrollPos = 0;
 
 initDropdownMenu(menuArray);
@@ -43,6 +48,22 @@ const enableScroll = () => {
 
 window.addEventListener('scroll', () => {
   const top = window.pageYOffset;
+  if (body.dataset.scrolled === 'true') {
+    if (top < 100) {
+      body.removeAttribute('data-scrolled');
+      headerSticky.classList.remove('header__sticky');
+    }
+    return;
+  }
+  if (top > 600 && popupBottom.dataset.closed !== 'true') {
+    popupBottom.classList.add('popup-bottom_active');
+  }
+  if (top > 0) {
+    buttonScrollTop.classList.remove('button-gotop_hidden');
+  }
+  else {
+    buttonScrollTop.classList.add('button-gotop_hidden')
+  }
   if (scrollPos < top) {
     headerSticky.style.top = '-190px'
   }
@@ -52,7 +73,7 @@ window.addEventListener('scroll', () => {
   if (top < 300 && headerSticky.classList.contains('header__sticky')) {
     headerSticky.classList.remove('header__sticky');
     window.scroll(0, top + headerSticky.offsetHeight)
-  } else if (top >= 500 && !headerSticky.classList.contains('header__sticky')) {
+  } else if (top >= 600 && !headerSticky.classList.contains('header__sticky')) {
     window.scroll(0, top - headerSticky.offsetHeight);
     headerSticky.classList.add('header__sticky');
     console.log(top);
@@ -65,7 +86,6 @@ window.addEventListener('scroll', () => {
       element.classList.remove('fade-in-bottom');
     }
   })
-  
 })
 buttonMenu.addEventListener('click', () => {
   menu.classList.toggle('menu_active');
@@ -93,4 +113,16 @@ buttonSearch.addEventListener('click', () => {
 buttonCloseSearch.addEventListener('click', () => {
   searchContainer.classList.remove('search_active');
   enableScroll();
+})
+buttonScrollTop.addEventListener('click', () => {
+  body.dataset.scrolled = 'true';
+  window.scroll({
+    top: -100,
+    left: 0,
+    behavior: 'smooth',
+  });
+})
+popupBottomClose.addEventListener('click', () => {
+  popupBottom.classList.remove('popup-bottom_active');
+  popupBottom.dataset.closed = 'true';
 })
